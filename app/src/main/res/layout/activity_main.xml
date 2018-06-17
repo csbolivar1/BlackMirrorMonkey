@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <!--TODO: Change happy/sad faces, -->
+    <!--TODO: Clean up layout -->
+
+    <!-- Happy Face (Monkey loves you) -->
+    <ImageButton
+        android:id="@+id/monkeylovesbtn"
+        android:background="@color/black"
+        android:layout_width="402dp"
+        android:layout_height="229dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginTop="4dp"
+        android:src="@mipmap/monkeylovesyou"
+        app:layout_constraintBottom_toTopOf="@+id/monkeyneedshugbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Sad face (Monkey needs a hug) -->
+    <ImageButton
+        android:id="@+id/monkeyneedshugbtn"
+        android:background="@color/black"
+        android:layout_width="402dp"
+        android:layout_height="229dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="55dp"
+        android:src="@mipmap/monkeyneedsahug"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monkeylovesbtn" />
+
+</android.support.constraint.ConstraintLayout>
